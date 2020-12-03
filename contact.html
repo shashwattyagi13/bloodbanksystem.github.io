@@ -1,0 +1,337 @@
+<!DOCTYPE html> 
+
+<html> 
+    <head> 
+	
+	    <link rel = "icon" href =  "blood.png" type = "image/x-icon"> 
+		
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>
+		   Online_Blood_Bank_System
+		</title>
+		
+    </head> 
+	<style>
+	
+p{
+margin-left:10%;
+margin-right:10%;}
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+}
+
+button {
+  background-color: #F05E5E;
+  color: white;
+  padding: 12px 20px;
+  font-size: 20px;
+  width: 50%;
+}
+
+.container {
+  padding: 100px;
+  background-color: #5D6367;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 60%; 
+}
+	
+
+.button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:50px;
+   background-color: white;
+   color: black;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+</style>  
+    <body> 
+	    
+		<p> <img src="blood.png" height="120" width="100" align="left"> <br><font size="10">  Blood Bank System  </font>
+		<font style="margin-left:25%; font-family: Arial, Helvetica, sans-serif;" >
+		
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sigin</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content">
+
+    <div class="container">
+	
+	  <h1 align="center" style="color:white;">Login Page</h1><br>
+	  
+      <label for="uname" align="center" style="color:white;"><b>Username</b></label><br><br>
+      <input type="text" align="center" placeholder="Enter Username" name="uname" required><br><br>
+
+      <label for="psw" align="center" style="color:white;"><b>Password</b></label><br><br>
+      <input type="password"align="center" placeholder="Enter Password" name="psw" required><br><br>
+        
+      <div align="center"><button type="submit"align="center">Login</button><br></div>
+      <label>
+        <input type="checkbox" checked="checked" align="center"> Remember me
+      </label>
+    </div>
+
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content">
+
+    <div class="container">
+	
+	  <h1 align="center" style="color:white;">Sigin Page</h1><br>
+	  
+	  <label for="uname" align="center" style="color:white;"><b>Full Name</b></label><br><br>
+      <input type="text" align="center" placeholder="Enter Username" name="uname" required><br><br>
+	  
+      <label for="uname" align="center" style="color:white;"><b>Username</b></label><br><br>
+      <input type="text" align="center" placeholder="Enter Username" name="uname" required><br><br>
+
+      <label for="psw" align="center" style="color:white;"><b>Password</b></label><br><br>
+      <input type="password"align="center" placeholder="Enter Password" name="psw" required><br><br>
+        
+      <div align="center"><button type="submit"align="center">Sigin</button><br></div>
+    </div>
+
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</font> 
+		<br> <br> <br>
+		
+		<ul style="margin-left:10%; margin-right:10%;">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register As Donor</a></li>
+            <li><a href="blood.html">Blood Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li ><a href="request.html">Request Blood</a></li>
+        </ul>
+		<br>
+		
+		<p style="margin-left:12%; margin-right:10%;">
+		
+		<img class="mySlides" src="40912183-stock-vector-creative-donate-blood-motivation-information-donor-poster-blood-donation-world-blood-donor-day-banne.jpg" width="500" height="300" border="2">
+        <img class="mySlides" src="26a863f815cdb1b108c66e1aaf7fccc7--blood-donation-quotes-giving-day.jpg" width="500" height="300" border="2"><br>
+        <img class="mySlides" src="don.png" width="500" height="300" border="2">
+        <img class="mySlides" src="blood_drive.gif" width="500" height="300" border="2">
+		
+		</p>
+		
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    if (i == 0){
+    x[1].style.opacity="0.2";
+    x[2].style.opacity="0.2";
+	x[3].style.opacity="0.2";
+	}
+	else if (i == 1){
+    x[2].style.opacity="0.2";
+    x[3].style.opacity="0.2";
+	x[0].style.opacity="0.2";
+	}
+	else if (i == 2){
+    x[1].style.opacity="0.2";
+    x[0].style.opacity="0.2";
+	x[2].style.opacity="0.2";
+	}
+	else {
+    x[1].style.opacity="0.2";
+    x[3].style.opacity="0.2";
+	x[0].style.opacity="0.2";
+	}
+    }
+   myIndex++;
+   if (myIndex > x.length) {myIndex = 1}  
+   if (myIndex==1)   
+   {x[0].style.opacity = "1";}
+   if (myIndex==2)   
+   {x[1].style.opacity = "1";}
+   if (myIndex==3)   
+   {x[3].style.opacity = "1";}
+   if (myIndex==4)   
+   {x[2].style.opacity = "1";}
+   setTimeout(carousel, 3000);
+}
+</script>
+ 
+		
+		<p>
+		    <form style="margin-left:15%;"> 
+            <fieldset style="width:80%" > 
+            <legend> <h2> Contact Us </h2> </legend>
+            <font size="4" style="color:gray;" >  Full Name: </font>
+            <font size="4" style="margin-left:29%; color:gray;" >  Email: </font><br> <br>
+            <input type="text" name="name" style="width:30%; padding: 12px 20px;" height=20 required>  
+            <font style="margin-left:4%;" >  <input type="email" name="email" style="width:50%; padding: 12px 20px;" required> </font>
+			<br><br>
+			
+			<font size="4" style="color:gray;" >Query Subject </font>
+			<font size="4" style="margin-left:22%; color:gray;" >  Mobile No: </font><br> <br>
+            <select name="subject" style="width:30%; padding: 12px 20px;" height=20 required> 
+            <option value="Select">Select</option>
+            <option value="A=">Helping</option>
+            <option value="B+">Media/Marketing</option>
+            <option value="O+">Other</option>
+			</select >
+			<font style="margin-left:4%;" >  <input type="text" name="email" style="width:40%; padding: 12px 20px;" required> </font>
+			<br> <br>
+			
+		    <font size="4" style="color:gray;" >  City: </font>
+			<br><br>
+			<select name="stateslist" style="width:30%; padding: 12px 20px;" required>
+            <option value="">Select State</option>
+			<option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+			<option value="Andhra Pradesh">Andhra Pradesh</option>
+			<option value="Arunachal Pradesh">Arunachal Pradesh</option>
+			<option value="Assam">Assam</option>
+			<option value="Bihar">Bihar</option>
+			<option value="Chandigarh">Chandigarh</option>
+			<option value="Chhattisgarh">Chhattisgarh</option>
+			<option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+			<option value="Daman and Diu">Daman and Diu</option>
+			<option value="Delhi">Delhi</option>
+			<option value="Goa">Goa</option>
+			<option value="Gujarat">Gujarat</option>
+			<option value="Haryana">Haryana</option>
+			<option value="Himachal Pradesh">Himachal Pradesh</option>
+			<option value="Jammu and Kashmir">Jammu and Kashmir</option>
+			<option value="Jharkhand">Jharkhand</option>
+			<option value="Karnataka">Karnataka</option>
+			<option value="Kerala">Kerala</option>
+			<option value="Lakshadweep">Lakshadweep</option>
+			<option value="Madhya Pradesh">Madhya Pradesh</option>
+			<option value="Maharashtra">Maharashtra</option>
+			<option value="Manipur">Manipur</option>
+			<option value="Meghalaya">Meghalaya</option>
+			<option value="Mizoram">Mizoram</option>
+			<option value="Nagaland">Nagaland</option>
+			<option value="Orissa">Orissa</option>
+			<option value="Pondicherry">Pondicherry</option>
+			<option value="Punjab">Punjab</option>
+			<option value="Rajasthan">Rajasthan</option>
+			<option value="Sikkim">Sikkim</option>
+			<option value="Tamil Nadu">Tamil Nadu</option>
+			<option value="Tripura">Tripura</option>
+			<option value="Uttaranchal">Uttaranchal</option>
+			<option value="Uttar Pradesh">Uttar Pradesh</option>
+			<option value="West Bengal">West Bengal</option>
+            </select> 
+			<br><br>
+			 
+			<font size="4" style="color:gray;" >  Message: </font> <br> <br>
+			<textarea name="message" rows="10" cols="30" style="padding: 12px 20px;" required> </textarea> <br><br>
+			<br>
+			<input type="submit" value="Submit" style="background-color: #333; color: white; text-align: center; padding: 10px 35px; margin-left:43%;">
+			</fieldset>
+            </form>
+		    <br>
+        </p>
+		  
+		<div class="footer">
+		  <br>
+          <font align="left">Blood Bank Management</font>
+		  <font style="margin-left:35%;">
+          <img src="facebook-770688_960_720.png" width="25px" height="25px"></img>
+		  <img src="instagram-3814080_960_720.png" width="25px" height="25px" style="margin-left:2%;"></img>
+		  <img src="twitter-logo.jpg" width="25px" height="25px" style="margin-left:2%;"></img></font>
+		  <font style="margin-left:38%;">@2019</font>
+		</div>
+		
+    </body> 
+</html>    

@@ -1,0 +1,325 @@
+<!DOCTYPE html> 
+
+<html> 
+    <head> 
+	
+	    <link rel = "icon" href =  "blood.png" type = "image/x-icon"> 
+		
+     <!-- <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">-->
+		<title>
+		   Online_Blood_Bank_System
+        </title>
+		
+    </head> 
+	<style>
+	
+
+input[type=text], input[type=password] {
+  width: 90%;
+  padding: 12px 20px;
+}
+
+button {
+  background-color: #F05E5E;
+  color: white;
+  padding: 12px 20px;
+  font-size: 20px;
+  width: 50%;
+}
+
+.container {
+  padding: 100px;
+  background-color: #5D6367;
+}
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; 
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4); 
+  padding-top: 60px;
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; 
+  border: 1px solid #888;
+  width: 60%; 
+}
+	
+	
+p{
+margin-left:10%;
+margin-right:10%;}
+
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   height:50px;
+   background-color: white;
+   color: black;
+}
+
+.button {
+  background-color: #333;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 50px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+
+</style>  
+    <body> 
+	    
+		<p> <img src="blood.png" height="120" width="100" align="left"> <br><font size="10">  Blood Bank System  </font>
+		<font style="margin-left:25%; font-family: Arial, Helvetica, sans-serif;" >
+		
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+<button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Sigin</button>
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content">
+
+    <div class="container">
+	
+	  <h1 align="center" style="color:white;">Login Page</h1><br>
+	  
+      <label for="uname" align="center" style="color:white;"><b>Username</b></label><br><br>
+      <input type="text" align="center" placeholder="Enter Username" name="uname" required><br><br>
+
+      <label for="psw" align="center" style="color:white;"><b>Password</b></label><br><br>
+      <input type="password"align="center" placeholder="Enter Password" name="psw" required><br><br>
+        
+      <div align="center"><button type="submit"align="center">Login</button><br></div>
+      <label>
+        <input type="checkbox" checked="checked" align="center"> Remember me
+      </label>
+    </div>
+
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+<div id="id02" class="modal">
+  
+  <form class="modal-content">
+
+    <div class="container">
+	
+	  <h1 align="center" style="color:white;">Sigin Page</h1><br>
+	  
+	  <label for="uname" align="center" style="color:white;"><b>Full Name</b></label><br><br>
+      <input type="text" align="center" placeholder="Enter Username" name="uname" required><br><br>
+	  
+      <label for="uname" align="center" style="color:white;"><b>Username</b></label><br><br>
+      <input type="text" align="center" placeholder="Enter Username" name="uname" required><br><br>
+
+      <label for="psw" align="center" style="color:white;"><b>Password</b></label><br><br>
+      <input type="password"align="center" placeholder="Enter Password" name="psw" required><br><br>
+        
+      <div align="center"><button type="submit"align="center">Sigin</button><br></div>
+    </div>
+
+  </form>
+</div>
+
+<script>
+var modal = document.getElementById('id01');
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</font> </p>
+		<br> <br> <br>
+		
+		<ul style="margin-left:10%; margin-right:10%;">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="register.html">Register As Donor</a></li>
+            <li><a href="blood.html">Blood Tips</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li ><a href="request.html">Request Blood</a></li>
+        </ul>
+		<p>
+		<marquee width="100%" direction="left" height="30%"><h2>A bottle of blood saved someone life, was it yours.</h2></marquee>
+		</p>
+        <div style="max-width:100%;margin-left:10%; margin-right:10%;">
+          <img class="mySlides" src="istockphoto-535106267-612x612.jpg" style="width:100%" height="450" border="2">
+          <img class="mySlides" src="Blood.jpg" style="width:100%" height="450" border="2">
+          <img class="mySlides" src="1528893550-blood.PNG.jpg" style="width:100%" height="450" border="2">
+          <img class="mySlides" src="blood-1968458__340.png" style="width:100%" height="450" border="2">
+		  <img class="mySlides" src="maxresdefault.jpg" style="width:100%" height="450" border="2">
+          <img class="mySlides" src="8T65XjGkc.jpg" style="width:100%" height="450" border="2">
+        </div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);    
+}
+</script>
+ 
+        <br><br>
+		<p style="margin-left:10%; margin-right:10%;">
+		<img src="chartoftheday_14892_where_people_are_most_willing_to_donate_blood_n.jpg" width="400" height="500" border="2" align="RIGHT">
+        <h3 style="margin-left:10%;"> => Of the 112.5 million blood donations collected globally,
+		approximately half of these are collected in high-income countries, home to 19% of the world’s population.<br><br>
+        => In low-income countries, up to 65% of blood transfusions are given to children under
+		5 years of age; whereas in high-income countries, the most frequently transfused patient
+		group is over 65 years of age, accounting for up to 76% of all transfusions.<br><br>
+        => Based on samples of 1000 people, the blood donation rate is 32.1 donations in
+		high-income countries, 14.9 donations in upper-middle-income countries, 7.8
+		donations in lower-middle-income countries and 4.6 donations in low-income countries.<br><br>
+        =>An increase of 10.7 million blood donations from voluntary unpaid donors has been
+		reported from 2008 to 2013. In total, 74 countries collect over 90% of their blood supply
+		from voluntary unpaid blood donors; however, 71 countries collect more than 50% of their
+		blood supply from family/replacement or paid donors.<br><br>
+        => Only 51 of 180 reporting countries produce plasma-derived medicinal products (PDMP
+		) through the fractionation of plasma collected in the reporting country. A total of 96
+		countries reported that all PDMP are imported, 17 countries reported that no PDMP were used
+		during the reporting period, and 16 countries did not respond to the question.</h3>
+		</p>
+		<br><br>
+		<p style="margin-right:10%;">
+        <iframe width="600" height="450" align="RIGHT" src="https://www.youtube.com/embed/obXjlquHlhE" frameborder="2"></iframe>
+		</p>
+		<p style="margin-left:10%;">
+		  
+		  <font style="color:#564D87; font-size:40px">Blood Donation Camps</font><br><br>
+		  <font> ----------------------------------------------------------------------------- </font><br><br>
+		  <font style="color:#564D87; font-size:25px;"> Select City </font>  
+		  <br>
+
+		<form>
+		<select name="stateslist" style="width:20%; padding: 10px 15px; margin-left:10%; color:#564D87;" height=20 required>
+            <option value="">All</option>
+            <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+            <option value="Andhra Pradesh">Andhra Pradesh</option>
+            <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+            <option value="Assam">Assam</option>
+            <option value="Bihar">Bihar</option>
+            <option value="Chandigarh">Chandigarh</option>
+            <option value="Chhattisgarh">Chhattisgarh</option>
+            <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+            <option value="Daman and Diu">Daman and Diu</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Goa">Goa</option>
+            <option value="Gujarat">Gujarat</option>
+            <option value="Haryana">Haryana</option>
+            <option value="Himachal Pradesh">Himachal Pradesh</option>
+            <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+            <option value="Jharkhand">Jharkhand</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Lakshadweep">Lakshadweep</option>
+            <option value="Madhya Pradesh">Madhya Pradesh</option>
+            <option value="Maharashtra">Maharashtra</option>
+            <option value="Manipur">Manipur</option>
+            <option value="Meghalaya">Meghalaya</option>
+            <option value="Mizoram">Mizoram</option>
+            <option value="Nagaland">Nagaland</option>
+            <option value="Orissa">Orissa</option>
+            <option value="Pondicherry">Pondicherry</option>
+            <option value="Punjab">Punjab</option>
+            <option value="Rajasthan">Rajasthan</option>
+            <option value="Sikkim">Sikkim</option>
+            <option value="Tamil Nadu">Tamil Nadu</option>
+            <option value="Tripura">Tripura</option>
+            <option value="Uttaranchal">Uttaranchal</option>
+            <option value="Uttar Pradesh">Uttar Pradesh</option>
+            <option value="West Bengal">West Bengal</option>
+        </select> 
+		<input type="submit" value="Submit" style="background-color: #333; color: white; text-align: center; padding: 10px 35px; margin-left:2%;">
+		</form>
+		<br><br>
+		</p>
+		
+		<p style="margin-left:10%;">
+		  
+		  <iframe src="new 1.html" frameborder="0" height="200" width="350">
+            <p>Your browser does not support iframes.</p>
+          </iframe>
+		  
+		</p>
+		<br><br><br><br>
+		
+		<div class="footer">
+		  <br>
+          <font align="left">Blood Bank Management</font>
+		  <font style="margin-left:35%;">
+          <img src="facebook-770688_960_720.png" width="25px" height="25px"></img>
+		  <img src="instagram-3814080_960_720.png" width="25px" height="25px" style="margin-left:2%;"></img>
+		  <img src="twitter-logo.jpg" width="25px" height="25px" style="margin-left:2%;"></img></font>
+		  <font style="margin-left:38%;">@2019</font>
+		</div>
+		
+    </body> 
+</html>    
